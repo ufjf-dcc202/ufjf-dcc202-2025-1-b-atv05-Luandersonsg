@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DCC202 - Semana 14</title>
+</head>
+<body>
+    
+    <script type="module" src="./main.js"></script> 
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        .tabuleiro {
+            display: grid;
+            grid-template-columns: repeat(7, 25px);
+            gap: 2px;
+            min-height: 25px;
+            background-color: lightgreen;
+            width: fit-content;
+        }
+
+        .disco{
+            border: 1px solid black;
+            border-radius: 50%;
+        }
+
+        .disco[data-cor="preto"]{
+            background: radial-gradient(circle at top, white, black);
+        }
+
+        .disco[data-cor="branco"]{
+            background: radial-gradient(circle at top, white, tan);
+        }
+
+        .disco[data-cor="transparente"]{
+            border-color: transparent;
+        }
+
+
+
+    </style>
+    <h1> DCC202 - Semana 14</h1>
+    
+</body>
+</html>
